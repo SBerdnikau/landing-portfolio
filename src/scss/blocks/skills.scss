@@ -1,0 +1,84 @@
+
+
+.skills{
+  background-color: $second;
+}
+
+.skills__wrap{
+  padding: 80px 15px;
+  display: flex;
+}
+
+.skills__left{
+  flex-basis: 280px;
+  margin-right: 115px;
+}
+
+.skills__right{
+  flex-grow: 1;
+}
+
+.skill__title {
+  font-size: 30px;
+  font-family: "Raleway";
+  color: $white;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin: 20px 0;
+  position: relative;
+
+  &::before{
+      content: '';
+      background-color: $white;
+      position: absolute;
+      left: 0;
+      top: -30px;
+      width: 70px;
+      height: 2px;
+  }
+
+}
+
+.skill__text{
+  font-size: 14px;
+  color: $white;
+  line-height: 1.429;
+  margin: 20px 0;
+}
+
+.skill__button{
+  @include button($primary){
+    margin-top: 50px;
+  };
+}
+
+.skill__progress{
+  margin: 20px 0;
+}
+
+
+@media (max-width: 980px) {
+  .skills__left{
+    margin-right: 30px;
+  }
+}
+
+@media (max-width:  768px) {
+  .skills__wrap{
+    flex-direction: column;
+  }
+
+  .skills__left{
+    margin-right: 0;
+    margin-bottom: 25px;
+    flex-basis: auto;
+  }
+}
+
+@media (max-width:  480px) {
+  .skills__wrap{
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}

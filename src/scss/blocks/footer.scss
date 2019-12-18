@@ -1,0 +1,11 @@
+$footerBg: #111;
+
+.footer{
+  background-color: $footerBg;
+}
+
+.footer__menu{
+  justify-content: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}

@@ -1,0 +1,63 @@
+$inputBg: #202020;
+
+.form{
+  label{
+    @include visually-hidden();
+  }
+}
+
+.form__input{
+  margin-bottom: 20px;
+
+  input, textarea{
+    border-radius: 10px;
+    background-color: $inputBg;
+    width: 100%;
+    display: block;
+    border: none;
+    box-shadow: none;
+    resize: none; //изменение размера
+    font-size: 20px;
+    font-family: "Raleway";
+    color: $white;
+    line-height: 1.4;
+    padding: 16px 10px 16px 10px;
+    box-sizing: border-box;
+
+    &::placeholder{
+      color: $white;
+      opacity: 1;
+    }
+
+  }
+
+}
+
+textarea{
+  min-height: 200px;
+}
+
+.form__button{
+  border-radius: 10px;
+  background-color: $second;
+  width: 100%;
+  appearance: none;
+  font-size: 20px;
+  padding: 16px 0;
+  font-family: "Raleway";
+  color: $white;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.4;
+  text-align: center;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: 500ms;
+
+  &:hover,&:active{
+    background-color: darken($second, 15%);
+  }
+
+}

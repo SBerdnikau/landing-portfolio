@@ -1,0 +1,33 @@
+.header{
+  border-bottom: 4px solid $second;
+}
+
+.header__wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 55px 15px;
+}
+
+.header__logo{
+  margin-right: 20px;
+}
+
+.header__menu{
+  padding: 0;
+  margin: 0;
+}
+
+@media (max-width: 768px){
+  .header__wrap{
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 25px 15px;
+
+    .header__logo{
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+}

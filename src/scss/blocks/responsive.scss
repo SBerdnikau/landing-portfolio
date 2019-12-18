@@ -1,0 +1,72 @@
+$responsiveText: #464646;
+$responsiveLine: #2f2f2f;
+
+.responsive__wrap{
+  padding: 100px 15px;
+  background: url("../images/bg-two.png") left bottom no-repeat;
+}
+
+.responsive__info{
+  max-width: 360px;
+  margin-left: auto;
+}
+
+.responsive__title{
+  font-size: 30px;
+  font-family: "Raleway";
+  color: $white;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin: 20px 0;
+  position: relative;
+
+  &::before{
+    content: '';
+    background-color: $responsiveLine;
+    position: absolute;
+    left: 0;
+    top: -20px;
+    width: 70px;
+    height: 2px;
+  }
+
+}
+
+.responsive__text {
+  font-size: 14px;
+  font-family: "Roboto";
+  color: $responsiveText;
+  line-height: 1.429;
+  margin: 20px 0;
+}
+
+.responsive__list{
+  margin: 20px 0;
+}
+
+.responsive__button{
+  @include button($thirty){
+    margin-top: 50px;
+  };
+}
+
+
+@media (max-width: 768px) {
+  .responsive__wrap{
+    background-image: none;
+  }
+
+  .responsive__info{
+    margin-left: 0;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+.responsive__wrap{
+  padding: 50px 15px;
+}
+
+
+}
